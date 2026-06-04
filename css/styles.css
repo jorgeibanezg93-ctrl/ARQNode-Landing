@@ -1,0 +1,173 @@
+/* ===== ESTILOS PERSONALIZADOS - ARQnode ===== */
+* {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0b1a2e !important;
+    backdrop-filter: blur(0);
+}
+
+.navbar .nav-link, .navbar-brand {
+    color: #e6edf5 !important;
+    font-weight: 500;
+}
+
+.navbar-brand i {
+    color: #3b82f6;
+}
+
+.btn-outline-light:hover {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+/* Secciones */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.bg-soft-dark {
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+.bg-gradient-light {
+    background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+/* Tarjetas */
+.card-net {
+    border: none;
+    border-radius: 24px;
+    background: white;
+    box-shadow: 0 20px 35px -10px rgba(0,20,40,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s;
+    height: 100%;
+}
+
+.card-net:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 45px -12px rgba(0,50,90,0.25);
+}
+
+/* Iconos circulares */
+.icon-circle {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Placeholder de héroe */
+.hero-img-placeholder {
+    background: linear-gradient(135deg, #1e293b, #2d3b57);
+    border-radius: 30px;
+    padding: 2.5rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 30px 40px -20px #1e293b80;
+}
+
+.hero-img-placeholder i {
+    font-size: 5rem;
+    color: #60a5fa;
+    opacity: 0.8;
+}
+
+/* Estadísticas */
+.stat-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0f172a;
+}
+
+.stat-label {
+    color: #475569;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Badges */
+.badge-soft {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Footer oscuro */
+.footer-dark {
+    background-color: #0b1a2e;
+    color: #cbd5e1;
+}
+
+.footer-dark a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.footer-dark a:hover {
+    color: white;
+}
+
+/* Utilidades adicionales */
+.text-primary {
+    color: #2563eb !important;
+}
+
+.bg-primary {
+    background-color: #2563eb !important;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-outline-secondary {
+    border-color: #cbd5e1;
+    color: #334155;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f1f5f9;
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+/* Responsive ajustes finos */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
