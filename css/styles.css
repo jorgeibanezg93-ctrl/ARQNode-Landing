@@ -1,65 +1,197 @@
-/* ===== ESTILOS PERSONALIZADOS - ARQnode ===== */
+/* ===== ARQnode - ESTILOS PERSONALIZADOS ===== */
+/* ============================================ */
+/* === 1. VARIABLES GLOBALES (Modifica aquí) === */
+/* ============================================ */
+
+:root {
+    /* ======================== */
+    /* 1. COLORES PRINCIPALES  */
+    /* ======================== */
+    --color-bg-dark: #0c1215;     /* Fondo oscuro (navbar, secciones) */
+    --color-bg-card: #ffffff;      /* Fondo de tarjetas */
+    --color-bg-light: #f4f6f9;     /* Fondo de secciones claras */
+    --color-text-dark: #1e293b;    /* Texto oscuro principal (legible sobre blanco) */
+    --color-text-light: #ffffff;    /* Texto sobre fondos oscuros */
+    --color-text-muted: #5c6b7a;    /* Texto secundario (gris suave) */
+
+    /* ======================== */
+    /* 2. COLORES DE ACENTO (Naranja Eléctrico) */
+    /* ======================== */
+    --color-primary: #ff5722;       /* Naranja Eléctrico 2: vibrante y moderno */
+    --color-primary-dark: #e64a19;   /* Naranja oscuro para hover */
+    --color-accent: #fde9e5;        /* Naranja muy suave para badges y detalles */
+    --color-accent-dark: #bf360c;    /* Acento oscuro para elementos específicos */
+    
+    /* ======================== */
+    /* 3. COLORES DE ICONOS Y BORDES */
+    /* ======================== */
+    --color-icon-bg: #fff0e8;       /* Fondo de iconos (naranja muy pálido) */
+    --color-icon: #ff5722;          /* Color del icono */
+    --color-border-light: #f0e2d9;  /* Bordes suaves (tono naranja claro) */
+    --color-shadow: rgba(0, 0, 0, 0.05);
+    
+    /* ======================== */
+    /* 4. TIPOGRAFÍA */
+    /* ======================== */
+    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    
+    /* ======================== */
+    /* 5. ESPACIADOS Y TAMAÑOS */
+    /* ======================== */
+    --section-padding-y: 5rem;
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 1rem;
+    --border-radius-lg: 2rem;
+    
+    /* ======================== */
+    /* 6. SOMBRAS */
+    /* ======================== */
+    --shadow-sm: 0 4px 6px -1px var(--color-shadow);
+    --shadow-md: 0 10px 15px -3px var(--color-shadow);
+    --shadow-lg: 0 20px 25px -5px var(--color-shadow);
+    --shadow-hover: 0 20px 35px -10px rgba(0, 0, 0, 0.15);
+    
+    /* ======================== */
+    /* 7. TRANSICIONES */
+    /* ======================== */
+    --transition-default: all 0.2s ease-in-out;
+    --transition-slow: all 0.3s ease-in-out;
+}
+
+/* ============================================ */
+/* === 2. ESTILOS BASE === */
+/* ============================================ */
+
 * {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: var(--font-family-base);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #f8fafc;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
+    line-height: 1.5;
 }
+
+a {
+    text-decoration: none;
+    transition: var(--transition-default);
+}
+
+/* ============================================ */
+/* === 3. COMPONENTES (Navbar, Botones, Tarjetas) === */
+/* ============================================ */
 
 /* Navbar */
 .navbar {
-    background-color: #0b1a2e !important;
-    backdrop-filter: blur(0);
+    background-color: var(--color-bg-dark) !important;
+    padding: 1rem 0;
 }
 
-.navbar .nav-link, .navbar-brand {
-    color: #e6edf5 !important;
-    font-weight: 500;
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: var(--color-text-light) !important;
+    font-weight: var(--font-weight-medium);
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-primary) !important;
 }
 
 .navbar-brand i {
-    color: #3b82f6;
+    color: var(--color-primary);
+}
+
+/* Botones */
+.btn {
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--border-radius-lg);
+    transition: var(--transition-default);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: var(--color-text-light);
 }
 
 .btn-outline-light:hover {
-    background-color: #2563eb;
-    border-color: #2563eb;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
 }
 
-/* Secciones */
-.section-padding {
-    padding: 5rem 0;
+.btn-outline-secondary {
+    border: 1px solid var(--color-border-light);
+    color: var(--color-text-dark);
 }
 
-.bg-soft-dark {
-    background-color: #0f172a;
-    color: #f1f5f9;
+.btn-outline-secondary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: white;
 }
 
-.bg-gradient-light {
-    background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+/* Badges */
+.badge-soft {
+    background-color: var(--color-accent);
+    color: var(--color-accent-dark);
+    font-weight: var(--font-weight-medium);
+    padding: 0.4rem 1rem;
+    border-radius: var(--border-radius-lg);
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
 }
 
-/* Tarjetas */
+/* Tarjetas - Fondo BLANCO con texto NEGRO para legibilidad */
 .card-net {
     border: none;
-    border-radius: 24px;
-    background: white;
-    box-shadow: 0 20px 35px -10px rgba(0,20,40,0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s;
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-bg-card);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-default);
     height: 100%;
+    padding: 1.5rem;
+    color: var(--color-text-dark); /* Texto oscuro garantizado sobre fondo blanco */
 }
 
 .card-net:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 30px 45px -12px rgba(0,50,90,0.25);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
 }
 
-/* Iconos circulares */
+/* Forzar color oscuro para todos los textos dentro de .card-net */
+.card-net h4,
+.card-net p,
+.card-net .text-secondary {
+    color: var(--color-text-dark) !important;
+}
+
+/* Iconos Circulares */
 .icon-circle {
-    background-color: #e0f2fe;
-    color: #0369a1;
+    background-color: var(--color-icon-bg);
+    color: var(--color-icon);
     width: 70px;
     height: 70px;
     border-radius: 18px;
@@ -68,106 +200,81 @@ body {
     justify-content: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    transition: var(--transition-default);
 }
 
-/* Placeholder de héroe */
+.card-net:hover .icon-circle {
+    background-color: var(--color-primary);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Placeholder de Hero */
 .hero-img-placeholder {
-    background: linear-gradient(135deg, #1e293b, #2d3b57);
-    border-radius: 30px;
-    padding: 2.5rem;
+    background: linear-gradient(135deg, var(--color-bg-dark), #1e2a32);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
     color: white;
     text-align: center;
-    box-shadow: 0 30px 40px -20px #1e293b80;
+    box-shadow: var(--shadow-lg);
 }
 
 .hero-img-placeholder i {
-    font-size: 5rem;
-    color: #60a5fa;
-    opacity: 0.8;
+    font-size: 4rem;
+    color: var(--color-primary);
+    opacity: 0.9;
 }
 
-/* Estadísticas */
-.stat-number {
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #0f172a;
+/* Secciones */
+.section-padding {
+    padding: var(--section-padding-y) 0;
 }
 
-.stat-label {
-    color: #475569;
-    font-weight: 500;
-    letter-spacing: 0.3px;
+.bg-soft-dark {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-light);
 }
 
-/* Badges */
-.badge-soft {
-    background-color: #dbeafe;
-    color: #1e40af;
-    font-weight: 500;
-    padding: 0.4rem 1rem;
-    border-radius: 40px;
-    font-size: 0.85rem;
-    display: inline-block;
-    margin-bottom: 1rem;
+.bg-gradient-light {
+    background: linear-gradient(145deg, #ffffff 0%, var(--color-bg-light) 100%);
 }
 
-/* Footer oscuro */
+/* Footer */
 .footer-dark {
-    background-color: #0b1a2e;
-    color: #cbd5e1;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-muted);
 }
 
 .footer-dark a {
-    color: #94a3b8;
-    text-decoration: none;
+    color: var(--color-text-muted);
 }
 
 .footer-dark a:hover {
-    color: white;
+    color: var(--color-primary);
 }
 
-/* Utilidades adicionales */
+/* ============================================ */
+/* === 4. UTILIDADES === */
+/* ============================================ */
+
 .text-primary {
-    color: #2563eb !important;
+    color: var(--color-primary) !important;
 }
 
 .bg-primary {
-    background-color: #2563eb !important;
+    background-color: var(--color-primary) !important;
 }
 
-.btn-primary {
-    background-color: #2563eb;
-    border-color: #2563eb;
-}
-
-.btn-primary:hover {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
-}
-
-.btn-outline-secondary {
-    border-color: #cbd5e1;
-    color: #334155;
-}
-
-.btn-outline-secondary:hover {
-    background-color: #f1f5f9;
-    border-color: #94a3b8;
-    color: #0f172a;
-}
-
-/* Responsive ajustes finos */
+/* Responsive */
 @media (max-width: 768px) {
-    .section-padding {
-        padding: 3rem 0;
+    :root {
+        --section-padding-y: 3rem;
+        --border-radius-md: 0.75rem;
     }
-    
     .display-4 {
         font-size: 2.5rem;
     }
-    
-    .stat-number {
-        font-size: 2rem;
+    .hero-img-placeholder {
+        padding: 1.5rem;
     }
 }

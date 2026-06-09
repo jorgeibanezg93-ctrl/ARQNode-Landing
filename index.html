@@ -11,15 +11,15 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+    <!-- Google Fonts (Inter y un toque más geométrico) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     
-    <!-- Tu archivo CSS personalizado -->
+    <!-- Tu archivo CSS personalizado (el nuevo) -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- ======= NAVBAR ======= -->
+    <!-- ======= NAVBAR ======= (se mantiene igual) -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
@@ -35,45 +35,30 @@
                     <li class="nav-item"><a class="nav-link" href="#metodo">Metodología</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
-                <a href="#contacto" class="btn btn-outline-light ms-lg-3 px-4 rounded-pill">📡 Consultoría</a>
+                <a href="#contacto" class="btn btn-outline-light ms-lg-3 px-4 rounded-pill border-0">📡 Consultoría</a>
             </div>
         </div>
     </nav>
 
-    <!-- ======= HERO / INICIO ======= -->
+    <!-- ======= HERO / INICIO MODIFICADO (Sin estadísticas) ======= -->
     <section id="inicio" class="section-padding" style="padding-top: 4rem;">
         <div class="container">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <span class="badge-soft"><i class="bi bi-wifi me-1"></i> Arquitectura & Conectividad</span>
                     <h1 class="display-4 fw-bold mb-3">Infraestructura de red <span class="text-primary">sólida, escalable y segura</span></h1>
-                    <p class="lead text-secondary mb-4">Diseñamos, auditamos y optimizamos la columna vertebral de tu empresa. Subnets, VLANs, routing y best practices para que la tecnología no frene tu crecimiento.</p>
+                    <p class="lead mb-4">Diseñamos, auditamos y optimizamos la columna vertebral de tu empresa. Subnets, VLANs, routing y best practices para que la tecnología no frene tu crecimiento.</p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#contacto" class="btn btn-primary btn-lg px-4 py-3 rounded-pill"><i class="bi bi-calendar-check me-2"></i>Diagnóstico gratis</a>
                         <a href="#servicios" class="btn btn-outline-secondary btn-lg px-4 py-3 rounded-pill">Ver servicios</a>
                     </div>
-                    <!-- mini confianza -->
-                    <div class="row mt-5 g-3">
-                        <div class="col-4">
-                            <div class="stat-number">+50</div>
-                            <div class="stat-label">empresas</div>
-                        </div>
-                        <div class="col-4">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">proyectos activos</div>
-                        </div>
-                        <div class="col-4">
-                            <div class="stat-number">24/7</div>
-                            <div class="stat-label">soporte</div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-lg-6">
-                    <!-- imagen dinámica placeholder -->
+                    <!-- imagen dinámica placeholder (puedes cambiarla por tu foto) -->
                     <div class="hero-img-placeholder text-center">
                         <i class="bi bi-hdd-stack-fill mb-3"></i>
                         <i class="bi bi-diagram-3 d-block mb-4" style="font-size: 5rem;"></i>
-                        <div class="row text-white-50">
+                        <div class="row">
                             <div class="col-4"><i class="bi bi-shield-check fs-2"></i><br>Seguro</div>
                             <div class="col-4"><i class="bi bi-speedometer2 fs-2"></i><br>+30% rend.</div>
                             <div class="col-4"><i class="bi bi-cloud-check fs-2"></i><br>Cloud ready</div>
@@ -95,22 +80,23 @@
                 </div>
             </div>
             <div class="row g-4">
+                <!-- Tarjeta 1 (ejemplo de card con la nueva estética) -->
                 <div class="col-md-4">
-                    <div class="p-4 bg-white text-dark rounded-4 h-100">
+                    <div class="card-net p-4 h-100">
                         <div class="icon-circle"><i class="bi bi-diagram-3-fill"></i></div>
                         <h4>Diseño de infraestructura</h4>
                         <p>Subnets, VLANs, enrutamiento. Red flexible y escalable. Topologías de bajo nivel y rack diagrams.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 bg-white text-dark rounded-4 h-100">
+                    <div class="card-net p-4 h-100">
                         <div class="icon-circle"><i class="bi bi-shield-lock-fill"></i></div>
                         <h4>Seguridad perimetral</h4>
                         <p>Hardening de dispositivos, segmentación y monitoreo de amenazas. Protegemos tu core.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="p-4 bg-white text-dark rounded-4 h-100">
+                    <div class="card-net p-4 h-100">
                         <div class="icon-circle"><i class="bi bi-arrow-repeat"></i></div>
                         <h4>Optimización continua</h4>
                         <p>Análisis de tráfico, actualizaciones y best practices para mantener la red al día.</p>
@@ -190,8 +176,8 @@
                     </ul>
                 </div>
                 <div class="col-lg-6">
-                    <div class="bg-light p-5 rounded-5 text-center">
-                        <i class="bi bi-bar-chart-steps fs-1 text-secondary"></i>
+                    <div class="bg-light p-5 rounded-5 text-center shadow-sm">
+                        <i class="bi bi-bar-chart-steps fs-1 text-primary"></i>
                         <h5 class="mt-3">Metodología comprobada</h5>
                         <div class="d-flex justify-content-between mt-4 text-start small">
                             <div>1. Auditoría<br>2. Diseño lógico<br>3. Implementación<br>4. Validación</div>
@@ -212,8 +198,10 @@
                     <h2 class="fw-bold text-white">¿Necesitas una red a prueba de futuro?</h2>
                     <p class="lead text-white-50 mb-4">Conversemos sobre tu proyecto. Consultoría inicial sin costo.</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="#" class="btn btn-primary btn-lg px-5 py-3 rounded-pill"><i class="bi bi-whatsapp me-2"></i>Escribir por WhatsApp</a>
-                        <a href="#" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill">hola@arqnode.cl</a>
+                        <!-- Enlace de WhatsApp con variable (se modifica desde el CSS) -->
+                        <a href="#" id="whatsapp-link" class="btn btn-primary btn-lg px-5 py-3 rounded-pill" target="_blank"><i class="bi bi-whatsapp me-2"></i>Escribir por WhatsApp</a>
+                        <!-- Enlace de correo con variable -->
+                        <a href="#" id="email-link" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill" target="_blank">Enviar un correo</a>
                     </div>
                 </div>
             </div>
@@ -231,24 +219,24 @@
                 <div class="col-md-2">
                     <h6>Compañía</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="#" class="text-secondary text-decoration-none">Sobre nosotros</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Casos de éxito</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-decoration-none">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-decoration-none">Casos de éxito</a></li>
+                        <li><a href="#" class="text-decoration-none">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <h6>Soluciones</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="#" class="text-secondary text-decoration-none">Diseño de redes</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Seguridad</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Cloud networking</a></li>
+                        <li><a href="#" class="text-decoration-none">Diseño de redes</a></li>
+                        <li><a href="#" class="text-decoration-none">Seguridad</a></li>
+                        <li><a href="#" class="text-decoration-none">Cloud networking</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h6>Contacto</h6>
                     <ul class="list-unstyled small">
-                        <li><i class="bi bi-envelope me-1"></i> contacto@arqnode.cl</li>
-                        <li><i class="bi bi-telephone me-1"></i> +56 9 1234 5678</li>
+                        <li><i class="bi bi-envelope me-1"></i> jorge.ibanezg93@gmail.com</li>
+                        <li><i class="bi bi-telephone me-1"></i> +56 9 5388 6179</li>
                         <li><i class="bi bi-geo-alt me-1"></i> Santiago, Chile</li>
                     </ul>
                 </div>
@@ -264,5 +252,17 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Script para enlaces dinámicos (opcional, puedes ponerlo aquí) -->
+    <script>
+        // Opcional: Si prefieres, puedes mover estas variables al HTML. 
+        // Por ahora las dejamos aquí para mantener la compatibilidad.
+        // Pero lo más ordenado es tenerlas en el CSS :root. Los enlaces los inyectamos desde CSS? No, los enlaces los debemos poner aquí.
+        // He modificado el CSS para que las variables de números y correos se usen aquí.
+        const wpNumber = '56953886179'; // <--- PON AQUÍ TU NÚMERO DE WHATSAPP (SIN + NI ESPACIOS, SOLO CÓDIGO DE PAÍS Y NÚMERO)
+        const emailAddress = 'jorge.ibanezg93@gmail.cl'; // <--- PON AQUÍ TU CORREO ELECTRÓNICO
+
+        document.getElementById('whatsapp-link').href = `https://wa.me/${wpNumber}`;
+        document.getElementById('email-link').href = `mailto:${emailAddress}`;
+    </script>
 </body>
 </html>
