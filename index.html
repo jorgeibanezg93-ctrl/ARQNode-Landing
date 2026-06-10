@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARQnode · Consultoría de Redes y Arquitectura</title>
+    
+    <!-- ========== TÍTULO SEO ========== -->
+    <title>ARQnode | Consultor de Redes en Santiago · Seguridad y Optimización</title>
+    
+    <!-- ========== META DESCRIPTION ========== -->
+    <meta name="description" content="Consultor de redes en Santiago. Diseño, seguridad y optimización de infraestructura para empresas. Diagnóstico gratis. +56 9 5388 6179">
+    
+    <!-- ========== META KEYWORDS ========== -->
+    <meta name="keywords" content="consultor redes santiago, asesor redes empresariales chile, ingeniero redes santiago, diseño redes lan santiago, seguridad perimetral empresas chile, administración firewalls santiago, implementación vlan santiago, caídas de red santiago, lentitud red corporativa chile, optimización red empresarial providencia, diagnóstico redes las condes">
+    
+    <!-- ========== AUTOR ========== -->
+    <meta name="author" content="Jorge Ibáñez - ARQnode">
+    
+    <!-- ========== ROBOTS ========== -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- ========== OPEN GRAPH (LinkedIn, Facebook) ========== -->
+    <meta property="og:title" content="ARQnode | Consultor de Redes en Santiago">
+    <meta property="og:description" content="Diseño, seguridad y optimización de infraestructura de red para empresas. Diagnóstico inicial sin costo.">
+    <meta property="og:image" content="https://arqnode.cl/img/og-image.jpg">
+    <meta property="og:url" content="https://arqnode.cl">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- ========== TWITTER CARD ========== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ARQnode | Consultor de Redes en Santiago">
+    <meta name="twitter:description" content="Consultoría de redes para empresas en Santiago. Diagnóstico gratis.">
+    
+    <!-- ========== GEO (SEO local) ========== -->
+    <meta name="geo.region" content="CL-RM">
+    <meta name="geo.placename" content="Santiago, Chile">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -11,15 +42,15 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
-    <!-- Google Fonts (Inter y un toque más geométrico) -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
     
-    <!-- Tu archivo CSS personalizado (el nuevo) -->
+    <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- ======= NAVBAR ======= (se mantiene igual) -->
+    <!-- ======= NAVBAR ======= -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
@@ -40,7 +71,7 @@
         </div>
     </nav>
 
-    <!-- ======= HERO / INICIO MODIFICADO (Sin estadísticas) ======= -->
+    <!-- ======= HERO / INICIO ======= -->
     <section id="inicio" class="section-padding" style="padding-top: 4rem;">
         <div class="container">
             <div class="row align-items-center g-5">
@@ -54,7 +85,6 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <!-- imagen dinámica placeholder (puedes cambiarla por tu foto) -->
                     <div class="hero-img-placeholder text-center">
                         <i class="bi bi-hdd-stack-fill mb-3"></i>
                         <i class="bi bi-diagram-3 d-block mb-4" style="font-size: 5rem;"></i>
@@ -80,7 +110,6 @@
                 </div>
             </div>
             <div class="row g-4">
-                <!-- Tarjeta 1 (ejemplo de card con la nueva estética) -->
                 <div class="col-md-4">
                     <div class="card-net p-4 h-100">
                         <div class="icon-circle"><i class="bi bi-diagram-3-fill"></i></div>
@@ -198,9 +227,7 @@
                     <h2 class="fw-bold text-white">¿Necesitas una red a prueba de futuro?</h2>
                     <p class="lead text-white-50 mb-4">Conversemos sobre tu proyecto. Consultoría inicial sin costo.</p>
                     <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <!-- Enlace de WhatsApp con variable (se modifica desde el CSS) -->
                         <a href="#" id="whatsapp-link" class="btn btn-primary btn-lg px-5 py-3 rounded-pill" target="_blank"><i class="bi bi-whatsapp me-2"></i>Escribir por WhatsApp</a>
-                        <!-- Enlace de correo con variable -->
                         <a href="#" id="email-link" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill" target="_blank">Enviar un correo</a>
                     </div>
                 </div>
@@ -252,15 +279,11 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!-- Script para enlaces dinámicos (opcional, puedes ponerlo aquí) -->
+    
     <script>
-        // Opcional: Si prefieres, puedes mover estas variables al HTML. 
-        // Por ahora las dejamos aquí para mantener la compatibilidad.
-        // Pero lo más ordenado es tenerlas en el CSS :root. Los enlaces los inyectamos desde CSS? No, los enlaces los debemos poner aquí.
-        // He modificado el CSS para que las variables de números y correos se usen aquí.
-        const wpNumber = '56953886179'; // <--- PON AQUÍ TU NÚMERO DE WHATSAPP (SIN + NI ESPACIOS, SOLO CÓDIGO DE PAÍS Y NÚMERO)
-        const emailAddress = 'jorge.ibanezg93@gmail.cl'; // <--- PON AQUÍ TU CORREO ELECTRÓNICO
-
+        const wpNumber = '56953886179';
+        const emailAddress = 'jorge.ibanezg93@gmail.com';
+        
         document.getElementById('whatsapp-link').href = `https://wa.me/${wpNumber}`;
         document.getElementById('email-link').href = `mailto:${emailAddress}`;
     </script>
