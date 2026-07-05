@@ -1,4 +1,4 @@
-/* ===== ARQnode - ESTILOS PERSONALIZADOS ===== */
+/* ===== ARQnode - ESTILOS PERSONALIZADOS (NUEVA VERSIÓN ROJO/NEGRO) ===== */
 /* ============================================ */
 /* === 1. VARIABLES GLOBALES (Modifica aquí) === */
 /* ============================================ */
@@ -7,28 +7,28 @@
     /* ======================== */
     /* 1. COLORES PRINCIPALES  */
     /* ======================== */
-    --color-bg-dark: #0c1215;     /* Fondo oscuro (navbar, secciones) */
-    --color-bg-card: #ffffff;      /* Fondo de tarjetas */
-    --color-bg-light: #f4f6f9;     /* Fondo de secciones claras */
-    --color-text-dark: #1e293b;    /* Texto oscuro principal (legible sobre blanco) */
-    --color-text-light: #ffffff;    /* Texto sobre fondos oscuros */
-    --color-text-muted: #5c6b7a;    /* Texto secundario (gris suave) */
+    --color-bg-dark: #0a0a0a;      /* Fondo oscuro (navbar, secciones) - HEX #000 */
+    --color-bg-card: #ffffff;       /* Fondo de tarjetas - HEX #fff */
+    --color-bg-light: #f2f2f2;      /* Fondo de secciones claras - gris muy claro */
+    --color-text-dark: #1a1a1a;     /* Texto oscuro principal - HEX #000 suavizado */
+    --color-text-light: #ffffff;    /* Texto sobre fondos oscuros - HEX #fff */
+    --color-text-muted: #6b6b6b;    /* Texto secundario - HEX #9C9C9C suavizado */
 
     /* ======================== */
-    /* 2. COLORES DE ACENTO (Naranja Eléctrico) */
+    /* 2. COLORES DE ACENTO (Rojo Corporativo) */
     /* ======================== */
-    --color-primary: #ff5722;       /* Naranja Eléctrico 2: vibrante y moderno */
-    --color-primary-dark: #e64a19;   /* Naranja oscuro para hover */
-    --color-accent: #fde9e5;        /* Naranja muy suave para badges y detalles */
-    --color-accent-dark: #bf360c;    /* Acento oscuro para elementos específicos */
+    --color-primary: #D14836;       /* Rojo principal - HEX #D14836 */
+    --color-primary-dark: #a83729;  /* Rojo oscuro para hover */
+    --color-accent: #f2e0dd;        /* Rojo muy suave para badges y detalles */
+    --color-accent-dark: #8a2e22;   /* Acento oscuro para elementos específicos */
     
     /* ======================== */
     /* 3. COLORES DE ICONOS Y BORDES */
     /* ======================== */
-    --color-icon-bg: #fff0e8;       /* Fondo de iconos (naranja muy pálido) */
-    --color-icon: #ff5722;          /* Color del icono */
-    --color-border-light: #f0e2d9;  /* Bordes suaves (tono naranja claro) */
-    --color-shadow: rgba(0, 0, 0, 0.05);
+    --color-icon-bg: #f5e6e3;       /* Fondo de iconos (rojo muy pálido) */
+    --color-icon: #D14836;          /* Color del icono */
+    --color-border-light: #d9d9d9;  /* Bordes suaves - HEX #9C9C9C más claro */
+    --color-shadow: rgba(0, 0, 0, 0.08);
     
     /* ======================== */
     /* 4. TIPOGRAFÍA */
@@ -93,6 +93,7 @@ a {
 .navbar {
     background-color: var(--color-bg-dark) !important;
     padding: 1rem 0;
+    border-bottom: 1px solid rgba(209, 72, 54, 0.3);
 }
 
 .navbar .nav-link,
@@ -114,6 +115,7 @@ a {
     font-weight: var(--font-weight-semibold);
     border-radius: var(--border-radius-lg);
     transition: var(--transition-default);
+    letter-spacing: 0.3px;
 }
 
 .btn-primary {
@@ -173,7 +175,8 @@ a {
     transition: var(--transition-default);
     height: 100%;
     padding: 1.5rem;
-    color: var(--color-text-dark); /* Texto oscuro garantizado sobre fondo blanco */
+    color: var(--color-text-dark);
+    border-top: 3px solid var(--color-primary);
 }
 
 .card-net:hover {
@@ -211,7 +214,7 @@ a {
 
 /* Placeholder de Hero */
 .hero-img-placeholder {
-    background: linear-gradient(135deg, var(--color-bg-dark), #1e2a32);
+    background: linear-gradient(135deg, var(--color-bg-dark), #1a1a1a);
     border-radius: var(--border-radius-md);
     padding: 2rem;
     color: white;
@@ -243,6 +246,7 @@ a {
 .footer-dark {
     background-color: var(--color-bg-dark);
     color: var(--color-text-muted);
+    border-top: 1px solid rgba(209, 72, 54, 0.3);
 }
 
 .footer-dark a {
