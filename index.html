@@ -117,61 +117,77 @@
     </div>
 </header>
 
-<!-- ================= HERO ================= -->
+<!-- ================= NUEVO HERO (PROPUESTA) ================= -->
 <section id="inicio" class="hero">
     <div class="wrap hero-grid">
         <div>
             <span class="eyebrow">Consultor Networking · Conectividad</span>
-            <h1>Infraestructura de red <span class="accent">sólida, escalable y segura</span></h1>
+            <h1 class="headline">Infraestructura de red <span class="c-orange">sólida,</span> <span class="c-violet">escalable y segura</span></h1>
             <p class="lead">Como <strong>consultor networking</strong>, ayudo a empresas a eliminar caídas de red, optimizar su rendimiento y proteger su infraestructura crítica. Diseño, auditoría y optimización de redes corporativas con best practices de la industria.</p>
             <div class="hero-cta">
-                <a href="#contacto" class="btn btn-orange">Diagnóstico gratis ↗</a>
-                <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+                <a href="#contacto" class="btn btn-primary">Diagnóstico gratis
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                </a>
+                <a href="#servicios" class="btn btn-outline">Ver servicios</a>
             </div>
             <div class="hero-stats">
                 <div class="hero-stat"><b>100%</b><span>Infraestructura segura</span></div>
                 <div class="hero-stat"><b>+10 años</b><span>De experiencia en redes</span></div>
-				<div class="hero-stat"><b>Cloud</b><span>Ready desde el diseño</span></div>
+                <div class="hero-stat"><b>Cloud</b><span>Ready desde el diseño</span></div>
             </div>
         </div>
 
         <div class="hero-visual">
-            <div class="hv-card">
-                <div class="hv-topline"><span class="dot"></span><span>Infraestructura de red</span></div>
-                <div class="hv-diagram">
-                    <svg class="lines" viewBox="0 0 400 230">
-                        <path d="M65 40 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-                        <path d="M335 40 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-                        <path d="M65 190 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-                        <path d="M335 190 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
-                    </svg>
-                    <div class="node" style="left:40px; top:16px;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="1.8"><path d="M12 3v18M3 12h18" stroke-linecap="round"/></svg>
-                    </div>
-                    <div class="node" style="right:40px; top:16px;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#8B93F5" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/></svg>
-                    </div>
-                    <div class="node core" style="left:50%; top:50%; transform:translate(-50%,-50%);">
-                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none">
-                            <circle cx="6" cy="6" r="2.4" fill="#0D1526"/>
-                            <circle cx="18" cy="6" r="2.4" fill="#EA6A3B"/>
-                            <circle cx="6" cy="18" r="2.4" fill="#8B93F5"/>
-                            <circle cx="18" cy="18" r="2.4" fill="#0D1526"/>
-                        </svg>
-                    </div>
-                    <div class="node" style="left:40px; bottom:16px;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#5BE39B" stroke-width="1.8"><path d="M12 20a8 8 0 100-16 8 8 0 000 16z"/><path d="M12 9v3l2 2"/></svg>
-                    </div>
-                    <div class="node" style="right:40px; bottom:16px;">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#FFB199" stroke-width="1.8"><path d="M4 12a8 8 0 0116 0"/><path d="M8 12a4 4 0 018 0"/><circle cx="12" cy="16" r="1.4" fill="#FFB199"/></svg>
-                    </div>
-                </div>
-                <div class="hv-tags">
-                    <span class="hv-tag"><span class="tdot"></span>Seguro</span>
-                    <span class="hv-tag"><span class="tdot"></span>+30% rend.</span>
-                    <span class="hv-tag"><span class="tdot"></span>Cloud ready</span>
-                </div>
+            <!-- connectors -->
+            <div class="connector h" style="left:150px; top:170px; width:120px;"></div>
+            <div class="connector h" style="left:60px; top:330px; width:110px;"></div>
+            <div class="connector v" style="left:190px; top:100px; height:70px;"></div>
+            <div class="connector h" style="left:430px; top:330px; width:120px;"></div>
+            <div class="connector v" style="left:550px; top:230px; height:100px;"></div>
+            <div class="connector h" style="left:150px; top:490px; width:120px;"></div>
+            <div class="connector v" style="left:270px; top:490px; height:80px;"></div>
+
+            <!-- blobs / pills -->
+            <div class="pill" style="left:110px; top:220px; width:160px; height:90px; background:linear-gradient(120deg,#C7CDF7,#AEB6F2);"></div>
+            <div class="pill" style="left:330px; top:60px; width:90px; height:230px; background:linear-gradient(160deg,#BFC6F5,#9AA3EE);"></div>
+            <div class="pill" style="left:440px; top:100px; width:100px; height:270px; background:linear-gradient(160deg,#FBD9C0,#F4B78E);"></div>
+            <div class="blob" style="left:80px; top:130px; width:110px; height:110px; background:radial-gradient(circle at 35% 30%,#D9DDFB,#C3C9F5);"></div>
+            <div class="blob" style="left:300px; top:250px; width:130px; height:130px; background:radial-gradient(circle at 40% 30%,#F7DCC4,#F2BE94); opacity:0.85;"></div>
+            <div class="pill" style="left:270px; top:420px; width:170px; height:90px; background:linear-gradient(120deg,#C7CDF7,#AEB6F2);"></div>
+            <div class="pill" style="left:470px; top:400px; width:90px; height:190px; background:linear-gradient(160deg,#FBD9C0,#F4B78E);"></div>
+            <div class="blob" style="left:445px; top:500px; width:80px; height:80px; background:radial-gradient(circle at 35% 30%,#F7DCC4,#F2A461);"></div>
+
+            <!-- icon cards -->
+            <div class="icon-card" style="left:170px; top:100px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0D1526" stroke-width="1.7"><path d="M7 18a4 4 0 01-1-7.9A5 5 0 0116 8a4.5 4.5 0 011 8.9"/></svg>
             </div>
+            <div class="icon-card" style="left:20px; top:300px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0D1526" stroke-width="1.7"><path d="M4 12a8 8 0 0116 0"/><path d="M8 12a4 4 0 018 0"/><circle cx="12" cy="16" r="1.4" fill="#0D1526" stroke="none"/></svg>
+            </div>
+            <div class="icon-card" style="left:520px; top:200px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0D1526" stroke-width="1.7"><path d="M12 3l7 3v6c0 5-3.4 8.4-7 9-3.6-.6-7-4-7-9V6l7-3z"/></svg>
+            </div>
+            <div class="icon-card" style="left:170px; top:460px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0D1526" stroke-width="1.7"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg>
+            </div>
+
+            <!-- core organic mark -->
+            <div class="core" style="left:240px; top:190px;">
+                <svg width="130" height="90" viewBox="0 -10 100 100">
+                    <path d="M50,50 Q73,34 66,7"  fill="none" stroke="#E3E5F1" stroke-width="7" stroke-linecap="round"/>
+                    <path d="M50,50 Q80,45 95,71" fill="none" stroke="#E3E5F1" stroke-width="7" stroke-linecap="round"/>
+                    <path d="M50,50 Q26,43 11,64" fill="none" stroke="#E3E5F1" stroke-width="7" stroke-linecap="round"/>
+                    <circle cx="50" cy="50" r="20" fill="#0D1526"/>
+                    <circle cx="66" cy="7"  r="13" fill="#8B93F5"/>
+                    <circle cx="95" cy="71" r="16" fill="#EA6A3B"/>
+                    <circle cx="11" cy="64" r="10" fill="#0D1526"/>
+                </svg>
+            </div>
+
+            <div class="node-dot" style="left:190px; top:167px;"></div>
+            <div class="node-dot" style="left:87px; top:327px;"></div>
+            <div class="node-dot" style="left:267px; top:487px;"></div>
+            <div class="node-dot" style="left:547px; top:265px;"></div>
         </div>
     </div>
 </section>
