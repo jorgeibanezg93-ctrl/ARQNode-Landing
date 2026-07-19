@@ -35,7 +35,7 @@
     <meta name="twitter:title" content="Consultor Networking | ARQnode">
     <meta name="twitter:description" content="Consultoría de redes para empresas. Diagnóstico gratis.">
     
-    <!-- ========== GEO (SEO local - opcional, lo dejo por si quieres) ========== -->
+    <!-- ========== GEO ========== -->
     <meta name="geo.region" content="CL">
     <meta name="geo.placename" content="Chile">
     
@@ -45,7 +45,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     
-    <!-- ========== SCHEMA JSON-LD (Datos estructurados para Google) ========== -->
+    <!-- ========== SCHEMA JSON-LD ========== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -80,288 +80,302 @@
     }
     </script>
     
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Tu archivo CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- ======= NAVBAR ======= -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <i class="bi bi-diagram-3 me-2"></i>ARQnode
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#soluciones">Soluciones</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#metodo">Metodología</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+<!-- ======= NAVBAR ======= -->
+<header class="nav">
+    <div class="nav-inner">
+        <a href="#inicio" class="logo">
+            <svg class="mark" viewBox="0 0 30 30" fill="none">
+                <circle cx="6" cy="6" r="3.2" fill="#0D1526"/>
+                <circle cx="15" cy="6" r="3.2" fill="#EA6A3B"/>
+                <circle cx="24" cy="6" r="3.2" fill="#0D1526"/>
+                <circle cx="6" cy="15" r="3.2" fill="#8B93F5"/>
+                <circle cx="15" cy="15" r="3.2" fill="#0D1526"/>
+                <circle cx="6" cy="24" r="3.2" fill="#0D1526"/>
+                <circle cx="15" cy="24" r="3.2" fill="#0D1526"/>
+            </svg>
+            ARQ <span class="node-word">NODE</span>
+        </a>
+        <button class="menu-toggle" aria-label="Menú" onclick="this.classList.toggle('open'); document.querySelector('.nav-links').classList.toggle('open')">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#soluciones">Soluciones</a>
+            <a href="#metodo">Metodología</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <a href="#contacto" class="btn btn-primary btn-nav">Diagnóstico gratuito ↗</a>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+        <div>
+            <span class="eyebrow">Consultor Networking · Conectividad</span>
+            <h1>Infraestructura de red <span class="accent">sólida, escalable y segura</span></h1>
+            <p class="lead">Como <strong>consultor networking</strong>, ayudo a empresas a eliminar caídas de red, optimizar su rendimiento y proteger su infraestructura crítica. Diseño, auditoría y optimización de redes corporativas con best practices de la industria.</p>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn btn-orange">Diagnóstico gratis ↗</a>
+                <a href="#servicios" class="btn btn-ghost">Ver servicios</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><b>100%</b><span>Infraestructura segura</span></div>
+                <div class="hero-stat"><b>+10 años</b><span>De experiencia en redes</span></div>
+				<div class="hero-stat"><b>Cloud</b><span>Ready desde el diseño</span></div>
+                <div class="hero-stat"><b>24/7</b><span>Soporte</span></div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="hv-card">
+                <div class="hv-topline"><span class="dot"></span><span>Infraestructura de red</span></div>
+                <div class="hv-diagram">
+                    <svg class="lines" viewBox="0 0 400 230">
+                        <path d="M65 40 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                        <path d="M335 40 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                        <path d="M65 190 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                        <path d="M335 190 L200 115" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                    </svg>
+                    <div class="node" style="left:40px; top:16px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="1.8"><path d="M12 3v18M3 12h18" stroke-linecap="round"/></svg>
+                    </div>
+                    <div class="node" style="right:40px; top:16px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#8B93F5" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4"/></svg>
+                    </div>
+                    <div class="node core" style="left:50%; top:50%; transform:translate(-50%,-50%);">
+                        <svg viewBox="0 0 24 24" width="30" height="30" fill="none">
+                            <circle cx="6" cy="6" r="2.4" fill="#0D1526"/>
+                            <circle cx="18" cy="6" r="2.4" fill="#EA6A3B"/>
+                            <circle cx="6" cy="18" r="2.4" fill="#8B93F5"/>
+                            <circle cx="18" cy="18" r="2.4" fill="#0D1526"/>
+                        </svg>
+                    </div>
+                    <div class="node" style="left:40px; bottom:16px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#5BE39B" stroke-width="1.8"><path d="M12 20a8 8 0 100-16 8 8 0 000 16z"/><path d="M12 9v3l2 2"/></svg>
+                    </div>
+                    <div class="node" style="right:40px; bottom:16px;">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#FFB199" stroke-width="1.8"><path d="M4 12a8 8 0 0116 0"/><path d="M8 12a4 4 0 018 0"/><circle cx="12" cy="16" r="1.4" fill="#FFB199"/></svg>
+                    </div>
+                </div>
+                <div class="hv-tags">
+                    <span class="hv-tag"><span class="tdot"></span>Seguro</span>
+                    <span class="hv-tag"><span class="tdot"></span>+30% rend.</span>
+                    <span class="hv-tag"><span class="tdot"></span>Cloud ready</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= NETWORK CONSULTING (dark) ================= -->
+<section id="consulting" class="section consulting on-dark">
+    <div class="wrap">
+        <div class="section-head">
+            <span class="eyebrow on-dark">Enfoque</span>
+            <h2>Consultoría Networking para Empresas</h2>
+            <p>Como <strong>consultor networking</strong>, enfrento la complejidad con análisis profundo. Mejoro tu infraestructura actual y te entrego un plan de acción concreto para maximizar el potencial de tu equipamiento.</p>
+        </div>
+        <div class="c-cards">
+            <div class="c-card">
+                <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M4 6h10M4 18h7"/></svg></div>
+                <h3>Diseño de infraestructura</h3>
+                <p>Subnets, VLANs, enrutamiento. Red flexible y escalable. Topologías de bajo nivel y rack diagramas.</p>
+            </div>
+            <div class="c-card">
+                <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l7 3v6c0 5-3.4 8.4-7 9-3.6-.6-7-4-7-9V6l7-3z"/></svg></div>
+                <h3>Seguridad perimetral</h3>
+                <p>Hardening de dispositivos, segmentación y monitoreo de amenazas. Protegemos tu core.</p>
+            </div>
+            <div class="c-card">
+                <div class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 19l6-6 4 4 6-8"/></svg></div>
+                <h3>Optimización continua</h3>
+                <p>Análisis de tráfico, actualizaciones y best practices para mantener la red al día.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SERVICIOS DETALLE (light grid) ================= -->
+<section id="servicios" class="section solutions">
+    <div class="wrap">
+        <div class="section-head">
+            <span class="eyebrow">Expertise</span>
+            <h2>Servicios de Consultoría Networking para Empresas</h2>
+            <p>Desde pymes hasta entornos corporativos complejos. Como consultor networking, aplico buenas prácticas de la industria para resolver problemas de conectividad, lentitud y seguridad.</p>
+        </div>
+        <div class="s-grid">
+            <div class="s-card">
+                <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 12h16M4 6h10M4 18h7"/></svg></div>
+                <div><h4>Infraestructura escalable</h4><p>Diseñamos la lógica de conectividad (VLANs, subnets) para que crezcas sin dolores de cabeza.</p></div>
+            </div>
+            <div class="s-card">
+                <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/></svg></div>
+                <div><h4>Hardware especializado</h4><p>Selección, configuración y reemplazo de equipamiento: switches, routers, firewalls.</p></div>
+            </div>
+            <div class="s-card">
+                <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+                <div><h4>Auditoría y diagnóstico</h4><p>Análisis de infraestructura actual, detección de cuellos de botella y vulnerabilidades.</p></div>
+            </div>
+            <div class="s-card">
+                <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M7 18a4 4 0 01-1-7.9A5 5 0 0116 8a4.5 4.5 0 011 8.9"/></svg></div>
+                <div><h4>Integración cloud</h4><p>Extiende tu red a AWS/Azure con túneles seguros y arquitectura híbrida.</p></div>
+            </div>
+            <div class="s-card">
+                <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 12a8 8 0 0116 0"/><path d="M8 12a4 4 0 018 0"/><circle cx="12" cy="16" r="1.4"/></svg></div>
+                <div><h4>Redes inalámbricas</h4><p>Diseño de cobertura, roaming y seguridad Wi-Fi para oficinas, warehouses, campus.</p></div>
+            </div>
+            <div class="s-card">
+                <div class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M15 8h5v5"/></svg></div>
+                <div><h4>Monitoreo 24/7</h4><p>Implementación de herramientas (SNMP, NetFlow) para tener visibilidad total.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= SOLUCIONES DETALLADAS (lista) ================= -->
+<section id="soluciones" class="section" style="background:var(--bg-soft);">
+    <div class="wrap">
+        <div class="section-head">
+            <span class="eyebrow">Networking Professional</span>
+            <h2>¿Qué soluciones en networking puedo ofrecerte?</h2>
+            <p>Como <strong>consultor networking</strong>, cubro todas las áreas de tu infraestructura de red, desde el diseño hasta el monitoreo continuo.</p>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px 40px; max-width:900px; margin:0 auto;">
+            <ul style="list-style:none;">
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Diseño y topología de red</strong> – Planificación y documentación completa de tu infraestructura.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Seguridad perimetral con firewall</strong> – Hardening, políticas de acceso y protección avanzada.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Gestión de ancho de banda</strong> – QoS, balanceo de carga y priorización de tráfico crítico.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>VPNs para oficinas remotas</strong> – Conectividad segura para sucursales y teletrabajo.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0;"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Balanceo de carga multi-enlace</strong> – Redundancia y optimización de múltiples conexiones a Internet.</div></li>
+            </ul>
+            <ul style="list-style:none;">
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Segmentación con VLANs</strong> – Separación lógica de departamentos, invitados o áreas críticas.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Enrutamiento dinámico</strong> – Implementación de OSPF, BGP para redes escalables y resilientes.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Monitoreo 24/7</strong> – SNMP, NetFlow, dashboards en tiempo real y alertas proactivas.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0; border-bottom:1px solid var(--line);"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Redes inalámbricas corporativas</strong> – Cobertura, roaming sin interrupciones y seguridad Wi-Fi.</div></li>
+                <li style="display:flex; align-items:flex-start; gap:12px; padding:12px 0;"><svg style="flex-shrink:0; margin-top:2px;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EA6A3B" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg> <div><strong>Filtrado de contenido</strong> – Bloqueo de sitios maliciosos y políticas de navegación segura.</div></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= BENEFICIOS / METODOLOGÍA ================= -->
+<section id="metodo" class="section benefits">
+    <div class="wrap">
+        <div>
+            <span class="eyebrow">Nuestro enfoque</span>
+            <div class="section-head left" style="margin-top:14px; margin-bottom:0;">
+                <h2>Cómo un consultor networking mejora tu infraestructura</h2>
+                <p>Automatización, segmentación y monitoreo: la red deja de ser un dolor de cabeza y se convierte en una ventaja competitiva.</p>
+            </div>
+            <div class="check-list">
+                <div class="check-item">
+                    <div class="check-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></div>
+                    <div><b>Menos incidencias</b><span>Red estable y tolerante a fallos.</span></div>
+                </div>
+                <div class="check-item">
+                    <div class="check-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></div>
+                    <div><b>Seguridad por capas</b><span>Segmentación y control de accesos.</span></div>
+                </div>
+                <div class="check-item">
+                    <div class="check-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></div>
+                    <div><b>Crecimiento sin rehacer</b><span>Escalabilidad desde el día 1.</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="method-card">
+            <div class="method-head"><span class="dot" style="width:8px;height:8px;border-radius:50%;background:#EA6A3B;"></span><span>Metodología comprobada</span></div>
+            <div class="method-steps">
+                <div class="method-step"><span class="method-num">1</span><p>Auditoría</p></div>
+                <div class="method-step"><span class="method-num">2</span><p>Diseño lógico</p></div>
+                <div class="method-step"><span class="method-num">3</span><p>Implementación</p></div>
+                <div class="method-step"><span class="method-num">4</span><p>Validación</p></div>
+                <div class="method-step"><span class="method-num">5</span><p>Documentación</p></div>
+                <div class="method-step"><span class="method-num">6</span><p>Transferencia</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CTA BANNER ================= -->
+<section id="contacto" class="cta-banner">
+    <span class="eyebrow on-dark">Hablemos</span>
+    <h2>¿Necesitas un consultor networking?</h2>
+    <p>Conversemos sobre tu proyecto. Consultoría inicial sin costo.</p>
+    <div class="cta-actions">
+        <a href="#" id="whatsapp-link" class="btn btn-white">Escribir por WhatsApp</a>
+        <a href="#" id="email-link" class="btn btn-outline-dark">Enviar un correo</a>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="wrap">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg class="mark" viewBox="0 0 30 30" fill="none">
+                        <circle cx="6" cy="6" r="3.2" fill="#fff"/>
+                        <circle cx="15" cy="6" r="3.2" fill="#EA6A3B"/>
+                        <circle cx="24" cy="6" r="3.2" fill="#fff"/>
+                        <circle cx="6" cy="15" r="3.2" fill="#8B93F5"/>
+                        <circle cx="15" cy="15" r="3.2" fill="#fff"/>
+                        <circle cx="6" cy="24" r="3.2" fill="#fff"/>
+                        <circle cx="15" cy="24" r="3.2" fill="#fff"/>
+                    </svg>
+                    ARQ <span class="node-word">NODE</span>
+                </div>
+                <p>Consultor networking. Especialistas en infraestructura de red y consultoría tecnológica. Arquitectura y nodos para un futuro conectado.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Servicios</h5>
+                <ul>
+                    <li><a href="#servicios">Diseño de redes</a></li>
+                    <li><a href="#servicios">Seguridad perimetral</a></li>
+                    <li><a href="#servicios">Monitoreo 24/7</a></li>
                 </ul>
-               <!-- <a href="#contacto" class="btn btn-outline-light ms-lg-3 px-4 rounded-pill border-0">📡 Consultoría</a> -->
+            </div>
+            <div class="footer-col">
+                <h5>Compañía</h5>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#soluciones">Soluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contacto</h5>
+                <ul>
+                    <li><a href="mailto:contacto@arqnode.cl">contacto@arqnode.cl</a></li>
+                    <li><a href="tel:+56953886179">+56 9 5388 6179</a></li>
+                    <li><a href="#">Santiago, Chile</a></li>
+                </ul>
             </div>
         </div>
-    </nav>
-
-    <!-- ======= HERO / INICIO ======= -->
-    <section id="inicio" class="section-padding" style="padding-top: 4rem;">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <span class="badge-soft"><i class="bi bi-wifi me-1"></i> Consultor Networking & Conectividad</span>
-                    <h1 class="display-4 fw-bold mb-3">Consultor Networking: <span class="text-primary">infraestructura sólida, escalable y segura</span></h1>
-                    <p class="lead mb-4">Como <strong>consultor networking</strong>, ayudo a empresas a eliminar caídas de red, optimizar su rendimiento y proteger su infraestructura crítica. Diseño, auditoría y optimización de redes corporativas con best practices de la industria.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#contacto" class="btn btn-primary btn-lg px-4 py-3 rounded-pill"><i class="bi bi-calendar-check me-2"></i>Diagnóstico gratis</a>
-                        <a href="#servicios" class="btn btn-outline-secondary btn-lg px-4 py-3 rounded-pill">Ver servicios</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-img-placeholder text-center">
-                        <i class="bi bi-hdd-stack-fill mb-3"></i>
-                        <i class="bi bi-diagram-3 d-block mb-4" style="font-size: 5rem;"></i>
-                        <div class="row">
-                            <div class="col-4"><i class="bi bi-shield-check fs-2"></i><br>Seguro</div>
-                            <div class="col-4"><i class="bi bi-speedometer2 fs-2"></i><br>+30% rend.</div>
-                            <div class="col-4"><i class="bi bi-cloud-check fs-2"></i><br>Cloud ready</div>
-                        </div>
-                        <p class="mt-4 small opacity-50">Infraestructura de red · Imagen representativa</p>
-                    </div>
-                </div>
-            </div>
+        <div class="footer-bottom">
+            <span>© 2026 ARQnode · Todos los derechos reservados · Consultor Networking · Arquitectura y Conectividad</span>
         </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- ======= NETWORK CONSULTING ======= -->
-    <section class="bg-soft-dark section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h2 class="display-5 fw-bold mb-4">Consultoría Networking para Empresas</h2>
-                    <p class="lead fs-4 mb-5">Como <strong>consultor networking</strong>, enfrento la complejidad con análisis profundo. Mejoro tu infraestructura actual y te entrego un plan de acción concreto para maximizar el potencial de tu equipamiento.</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card-net p-4 h-100">
-                        <div class="icon-circle"><i class="bi bi-diagram-3-fill"></i></div>
-                        <h4>Diseño de infraestructura</h4>
-                        <p>Subnets, VLANs, enrutamiento. Red flexible y escalable. Topologías de bajo nivel y rack diagramas.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-net p-4 h-100">
-                        <div class="icon-circle"><i class="bi bi-shield-lock-fill"></i></div>
-                        <h4>Seguridad perimetral</h4>
-                        <p>Hardening de dispositivos, segmentación y monitoreo de amenazas. Protegemos tu core.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-net p-4 h-100">
-                        <div class="icon-circle"><i class="bi bi-arrow-repeat"></i></div>
-                        <h4>Optimización continua</h4>
-                        <p>Análisis de tráfico, actualizaciones y best practices para mantener la red al día.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<script>
+    // Enlaces de contacto
+    const wpNumber = '56953886179';
+    const emailAddress = 'contacto@arqnode.cl';
+    document.getElementById('whatsapp-link').href = `https://wa.me/${wpNumber}`;
+    document.getElementById('email-link').href = `mailto:${emailAddress}`;
+</script>
 
-    <!-- ======= SERVICIOS DETALLE ======= -->
-    <section id="servicios" class="section-padding bg-gradient-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="badge-soft"><i class="bi bi-grid"></i> Expertise</span>
-                <h2 class="fw-bold">Servicios de Consultoría Networking para Empresas</h2>
-                <p class="text-secondary col-lg-7 mx-auto">Desde pymes hasta entornos corporativos complejos. Como consultor networking, aplico buenas prácticas de la industria para resolver problemas de conectividad, lentitud y seguridad.</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-net p-4">
-                        <i class="bi bi-hdd-network-fill fs-1 text-primary mb-3"></i>
-                        <h4>Infraestructura escalable</h4>
-                        <p class="text-secondary">Diseñamos la lógica de conectividad (VLANs, subnets) para que crezcas sin dolores de cabeza.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-net p-4">
-                        <i class="bi bi-motherboard-fill fs-1 text-primary mb-3"></i>
-                        <h4>Hardware especializado</h4>
-                        <p class="text-secondary">Selección, configuración y reemplazo de equipamiento: switches, routers, firewalls.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-net p-4">
-                        <i class="bi bi-eye-fill fs-1 text-primary mb-3"></i>
-                        <h4>Auditoría y diagnóstico</h4>
-                        <p class="text-secondary">Análisis de infraestructura actual, detección de cuellos de botella y vulnerabilidades.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-net p-4">
-                        <i class="bi bi-cloud-arrow-up-fill fs-1 text-primary mb-3"></i>
-                        <h4>Integración cloud</h4>
-                        <p class="text-secondary">Extiende tu red a AWS/Azure con túneles seguros y arquitectura híbrida.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-net p-4">
-                        <i class="bi bi-wifi fs-1 text-primary mb-3"></i>
-                        <h4>Redes inalámbricas</h4>
-                        <p class="text-secondary">Diseño de cobertura, roaming y seguridad Wi-Fi para oficinas, warehouses, campus.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card-net p-4">
-                        <i class="bi bi-file-bar-graph-fill fs-1 text-primary mb-3"></i>
-                        <h4>Monitoreo 24/7</h4>
-                        <p class="text-secondary">Implementación de herramientas (SNMP, NetFlow) para tener visibilidad total.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======= SOLUCIONES DETALLADAS ======= -->
-    <section id="soluciones" class="section-padding bg-white">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="badge-soft"><i class="bi bi-check-lg"></i> Networking Professional</span>
-                <h2 class="fw-bold">¿Qué soluciones en networking puedo ofrecerte?</h2>
-                <p class="text-secondary col-lg-8 mx-auto">Como <strong>consultor networking</strong>, cubro todas las áreas de tu infraestructura de red, desde el diseño hasta el monitoreo continuo.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Diseño y topología de red</strong> – Planificación y documentación completa de tu infraestructura.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Seguridad perimetral con firewall</strong> – Hardening, políticas de acceso y protección avanzada.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Gestión de ancho de banda</strong> – QoS, balanceo de carga y priorización de tráfico crítico.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>VPNs para oficinas remotas</strong> – Conectividad segura para sucursales y teletrabajo.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Balanceo de carga multi-enlace</strong> – Redundancia y optimización de múltiples conexiones a Internet.</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Segmentación con VLANs</strong> – Separación lógica de departamentos, invitados o áreas críticas.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Enrutamiento dinámico</strong> – Implementación de OSPF, BGP para redes escalables y resilientes.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Monitoreo 24/7</strong> – SNMP, NetFlow, dashboards en tiempo real y alertas proactivas.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Redes inalámbricas corporativas</strong> – Cobertura, roaming sin interrupciones y seguridad Wi-Fi.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Filtrado de contenido</strong> – Bloqueo de sitios maliciosos y políticas de navegación segura.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======= MÉTODO ======= -->
-    <section id="metodo" class="section-padding bg-gradient-light">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <span class="badge-soft">Nuestro enfoque</span>
-                    <h2 class="fw-bold display-6 mb-4">Cómo un consultor networking mejora tu infraestructura</h2>
-                    <p class="fs-5 text-secondary mb-4">Automatización, segmentación y monitoreo: la red deja de ser un dolor de cabeza y se convierte en una ventaja competitiva.</p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Menos incidencias:</strong> red estable y tolerante a fallos.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Seguridad por capas:</strong> segmentation y control de accesos.</li>
-                        <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Crecimiento sin rehacer:</strong> escalabilidad desde el día 1.</li>
-                    </ul>
-                </div>
-                <div class="col-lg-6">
-                    <div class="bg-white p-5 rounded-5 text-center shadow-sm">
-                        <i class="bi bi-bar-chart-steps fs-1 text-primary"></i>
-                        <h5 class="mt-3">Metodología comprobada</h5>
-                        <div class="d-flex justify-content-between mt-4 text-start small">
-                            <div>1. Auditoría<br>2. Diseño lógico<br>3. Implementación<br>4. Validación</div>
-                            <div>5. Documentación<br>6. Transferencia<br>7. Soporte</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======= CONTACTO ======= -->
-    <section id="contacto" class="bg-soft-dark section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <i class="bi bi-chat-dots-fill fs-1 text-primary mb-3"></i>
-                    <h2 class="fw-bold text-white">¿Necesitas un consultor networking?</h2>
-                    <p class="lead text-white-50 mb-4">Conversemos sobre tu proyecto. Consultoría inicial sin costo.</p>
-                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-                        <a href="#" id="whatsapp-link" class="btn btn-primary btn-lg px-5 py-3 rounded-pill" target="_blank"><i class="bi bi-whatsapp me-2"></i>Escribir por WhatsApp</a>
-                        <a href="#" id="email-link" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill" target="_blank">Enviar un correo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ======= FOOTER ======= -->
-    <footer class="footer-dark pt-5 pb-4">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-md-5">
-                    <h5><i class="bi bi-diagram-3 me-2"></i>ARQnode</h5>
-                    <p class="small opacity-75">Consultor networking. Especialistas en infraestructura de red y consultoría tecnológica. Arquitectura y nodos para un futuro conectado.</p>
-                </div>
-                <div class="col-md-2">
-                    <h6>Compañía</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#inicio" class="text-secondary text-decoration-none">Inicio</a></li>
-                        <li><a href="#servicios" class="text-secondary text-decoration-none">Servicios</a></li>
-                        <li><a href="#soluciones" class="text-secondary text-decoration-none">Soluciones</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <h6>Servicios</h6>
-                    <ul class="list-unstyled small">
-                        <li><a href="#servicios" class="text-secondary text-decoration-none">Diseño de redes</a></li>
-                        <li><a href="#servicios" class="text-secondary text-decoration-none">Seguridad perimetral</a></li>
-                        <li><a href="#servicios" class="text-secondary text-decoration-none">Monitoreo 24/7</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h6>Contacto</h6>
-                    <ul class="list-unstyled small">
-                        <li><i class="bi bi-envelope me-1"></i> contacto@arqnode.cl</li>
-                        <li><i class="bi bi-telephone me-1"></i> +56 9 5388 6179</li>
-                        <li><i class="bi bi-geo-alt me-1"></i> Chile</li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="opacity-25">
-            <div class="row">
-                <div class="col text-center small opacity-50">
-                    © 2026 ARQnode · Todos los derechos reservados · Consultor Networking · Arquitectura y Conectividad
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <script>
-        const wpNumber = '56953886179';
-        const emailAddress = 'contacto@arqnode.cl';
-        
-        document.getElementById('whatsapp-link').href = `https://wa.me/${wpNumber}`;
-        document.getElementById('email-link').href = `mailto:${emailAddress}`;
-    </script>
 </body>
 </html>
