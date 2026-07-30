@@ -510,8 +510,10 @@ header.nav {
     background: rgba(255, 255, 255, 0.04);
     border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 20px;
-    padding: 30px 26px;
     transition: transform .2s ease, background .2s ease;
+	position: relative;           /* Necesario para que el badge se posicione absoluto dentro */
+    padding: 30px 26px;           /* Mantén el padding que ya tenías */
+    padding-top: 33px; 
 }
 
 .c-card:hover {
@@ -1314,6 +1316,11 @@ footer {
 /* ============================================ */
 
 .card-badge {
+    position: absolute;
+    top: 12px;                    /* Distancia desde el borde superior de la tarjeta */
+    left: 26px;                   /* Misma distancia que el padding lateral */
+    /* Opcional: si quieres a la derecha, usa right: 26px; left: auto; */
+    margin-bottom: 0;             /* Elimina el margen inferior que empujaba el contenido */
     display: inline-block;
     background: #1C2740;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1324,8 +1331,8 @@ footer {
     letter-spacing: 0.6px;
     padding: 5px 12px;
     border-radius: 100px;
-    margin-bottom: 12px;
-	transform: translateY(-45px) translateX(228px);
+    z-index: 1;                   /* Asegura que esté por encima de otros elementos */
+	transform: translateY(-25px) translateX(228px);
 }
 
 /* ============================================ */
