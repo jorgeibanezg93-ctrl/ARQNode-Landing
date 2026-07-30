@@ -520,11 +520,11 @@ header.nav {
 }
 
 .c-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 11px;
     margin-bottom: 20px;
-    background: linear-gradient(140deg, var(--orange), var(--orange-deep));
+    background: linear-gradient(147.33deg, #FFE5DB -63.19%, #D8531F 73.27%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1224,3 +1224,131 @@ footer {
     }
 }
 
+/* ============================================ */
+/* === CABECERA CONSULTING (orden: badge → título → párrafo) === */
+/* ============================================ */
+
+.consulting-header {
+    max-width: 800px;
+    margin: 0 auto 52px;
+    text-align: center;
+}
+
+.consulting-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consulting-header-content .eyebrow {
+    align-self: center;
+}
+
+.consulting-header-content h2 {
+    margin-top: 14px;
+    margin-bottom: 16px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.18;
+}
+
+.consulting-header-content p {
+    color: #A9AFC6;
+    font-size: 15.5px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============================================ */
+/* === CABECERA CONSULTING (Figma: badge arriba, título izq, párrafo der) === */
+/* ============================================ */
+
+.consulting-header-figma {
+    margin-bottom: 52px;
+}
+
+.consulting-header-figma .eyebrow {
+    display: inline-flex;
+    margin-bottom: 16px;
+}
+
+.consulting-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px; /* Reducido de 60px a 30px para acercar el párrafo */
+}
+
+.consulting-left {
+    flex: 0 0 auto; /* Ocupa solo el ancho de su contenido */
+    min-width: 280px;
+}
+
+.consulting-left h2 {
+    color: #fff;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.18;
+    margin: 0;
+    text-align: left;
+}
+
+.consulting-right {
+    flex: 1; /* Ocupa el espacio restante */
+    min-width: 280px;
+    text-align: right;
+}
+
+.consulting-right p {
+    color: #A9AFC6;
+    font-size: 15.5px;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* ============================================ */
+/* === ETIQUETA "ESENCIAL" EN LA PRIMERA TARJETA === */
+/* ============================================ */
+
+.card-badge {
+    display: inline-block;
+    background: #1C2740;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #EA6A3B;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    padding: 5px 12px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+	transform: translateY(-45px) translateX(228px);
+}
+
+/* ============================================ */
+/* === RESPONSIVE PARA LA CABECERA === */
+/* ============================================ */
+
+@media (max-width: 768px) {
+    .consulting-row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+    .consulting-left {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    .consulting-right {
+        flex: 1 1 auto;
+        min-width: 0;
+        text-align: left;
+    }
+    .consulting-right p {
+        text-align: left;
+    }
+}
