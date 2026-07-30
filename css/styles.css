@@ -772,13 +772,13 @@ header.nav {
     max-width: 650px;
     margin: 0 auto 32px;
     text-align: center;
-    text-justify: inter-word;
+    text-justify: inter-word;/* CTA */
     position: relative;
 }
 
 .cta-actions {
     display: flex;
-    gap: 14px;
+    gap: 110px;                 /* <-- Aumentado de 14px a 28px para más separación */
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
@@ -1010,7 +1010,7 @@ footer {
     }
     .cta-actions {
         flex-direction: column;
-        align-items: center;
+        gap: 16px;             /* Separación vertical en móvil */
     }
     .cta-actions .btn {
         width: 100%;
