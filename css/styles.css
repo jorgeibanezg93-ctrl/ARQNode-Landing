@@ -1406,6 +1406,7 @@ footer {
 .soluciones-figma-categoria {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     margin-bottom: 18px;
 }
