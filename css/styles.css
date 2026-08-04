@@ -17,11 +17,10 @@
     --orange-deep: #D8531F;
     --violet: #8B93F5;
     --blue: #4C5FD8;
-	--blue-2: #1E2640;
+    --blue-2: #1E2640;
     --line: #E3E5F1;
     --dark: #0A0F1E;
     --dark-2: #121A2E;
-	
     
     /* Tipografía */
     --font-family-base: 'Inter', sans-serif;
@@ -511,9 +510,9 @@ header.nav {
     border: 1px solid rgba(255, 255, 255, 0.09);
     border-radius: 20px;
     transition: transform .2s ease, background .2s ease;
-	position: relative;           /* Necesario para que el badge se posicione absoluto dentro */
-    padding: 30px 26px;           /* Mantén el padding que ya tenías */
-    padding-top: 33px; 
+    position: relative;
+    padding: 30px 26px;
+    padding-top: 33px;
 }
 
 .c-card:hover {
@@ -772,13 +771,13 @@ header.nav {
     max-width: 650px;
     margin: 0 auto 32px;
     text-align: center;
-    text-justify: inter-word;/* CTA */
+    text-justify: inter-word;
     position: relative;
 }
 
 .cta-actions {
     display: flex;
-    gap: 110px;                 /* <-- Aumentado de 14px a 28px para más separación */
+    gap: 110px;
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
@@ -1010,7 +1009,7 @@ footer {
     }
     .cta-actions {
         flex-direction: column;
-        gap: 16px;             /* Separación vertical en móvil */
+        gap: 16px;
     }
     .cta-actions .btn {
         width: 100%;
@@ -1281,11 +1280,11 @@ footer {
 .consulting-row {
     display: flex;
     align-items: flex-start;
-    gap: 60px; /* Reducido de 60px a 30px para acercar el párrafo */
+    gap: 60px;
 }
 
 .consulting-left {
-    flex: 0 0 auto; /* Ocupa solo el ancho de su contenido */
+    flex: 0 0 auto;
     min-width: 280px;
 }
 
@@ -1299,7 +1298,7 @@ footer {
 }
 
 .consulting-right {
-    flex: 1; /* Ocupa el espacio restante */
+    flex: 1;
     min-width: 280px;
     text-align: right;
 }
@@ -1319,10 +1318,9 @@ footer {
 
 .card-badge {
     position: absolute;
-    top: 12px;                    /* Distancia desde el borde superior de la tarjeta */
-    left: 26px;                   /* Misma distancia que el padding lateral */
-    /* Opcional: si quieres a la derecha, usa right: 26px; left: auto; */
-    margin-bottom: 0;             /* Elimina el margen inferior que empujaba el contenido */
+    top: 12px;
+    left: 26px;
+    margin-bottom: 0;
     display: inline-block;
     background: #1C2740;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1333,8 +1331,8 @@ footer {
     letter-spacing: 0.6px;
     padding: 5px 12px;
     border-radius: 100px;
-    z-index: 1;                   /* Asegura que esté por encima de otros elementos */
-	transform: translateY(-25px) translateX(228px);
+    z-index: 1;
+    transform: translateY(-25px) translateX(228px);
 }
 
 /* ============================================ */
@@ -1359,5 +1357,121 @@ footer {
     }
     .consulting-right p {
         text-align: left;
+    }
+}
+
+/* ============================================ */
+/* === BOTÓN DE AUDITORÍA === */
+/* ============================================ */
+
+.btn-auditoria {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 22px;
+    background: #14152B;
+    color: #FFFFFF;
+    border-radius: 999px;
+    font-family: var(--font-family-heading);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    transition: background 0.2s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-auditoria:hover {
+    background: #2a2c4a;
+    transform: translateY(-2px);
+}
+
+/* ============================================ */
+/* === SOLUCIONES - ESTRUCTURA FIGMA === */
+/* ============================================ */
+
+.soluciones-figma-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+.soluciones-figma-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.soluciones-figma-categoria {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.soluciones-figma-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.soluciones-figma-categoria-titulo {
+    font-family: 'Sora', var(--font-family-heading);
+    font-weight: 600;
+    font-size: 14px;
+    color: #5B5F79;
+}
+
+.soluciones-figma-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.soluciones-figma-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px 0 18px 14px;
+    border-bottom: 1px solid var(--line);
+}
+
+.soluciones-figma-list li:last-child {
+    border-bottom: none;
+}
+
+.soluciones-figma-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    font-size: 20px;
+    line-height: 1;
+    color: inherit;
+}
+
+.soluciones-figma-item {
+    font-size: 14px;
+    line-height: 22px;
+    color: #5B5F79;
+}
+
+.soluciones-figma-item strong {
+    color: #14152B;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .soluciones-figma-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .soluciones-figma-list li {
+        padding: 14px 0 14px 10px;
     }
 }
